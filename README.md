@@ -1,12 +1,9 @@
 # phpspec Laravel Extension
 
+This extension is from Ben Constable but I forked it because he wouldn't update it.
+
 > [phpspec](http://www.phpspec.net/) extension for testing [Laravel](http://laravel.com/)
   applications.
-
-[![Build Status](https://travis-ci.org/BenConstable/phpspec-laravel.svg?branch=master)](https://travis-ci.org/BenConstable/phpspec-laravel)
-[![Latest Stable Version](https://poser.pugx.org/benconstable/phpspec-laravel/v/stable.png)](https://packagist.org/packages/benconstable/phpspec-laravel)
-[![Total Downloads](https://poser.pugx.org/benconstable/phpspec-laravel/downloads.png)](https://packagist.org/packages/benconstable/phpspec-laravel)
-[![License](https://poser.pugx.org/benconstable/phpspec-laravel/license.svg)](https://packagist.org/packages/benconstable/phpspec-laravel)
 
 ## Versions
 
@@ -19,13 +16,14 @@ the right one.
 | `^v1.2`         | `^v4.1`         | `^v2.0`         |
 | `^v2.0`         | `v5.0-v5.3`     | `^v2.1`         |
 | `^v3.0`         | `^v5.1`         | `^v3.0`         |
+| `^v4.0`         | `^v5.6`         | `^v4.0`         |
 
 ## Installation
 
 Install the package with composer:
 
 ```
-composer require --dev "benconstable/phpspec-laravel:~3.0"
+composer require --dev "heybigname/phpspec-laravel"
 ```
 
 then add this to your `phpspec.yml`:
@@ -35,7 +33,7 @@ extensions:
   PhpSpec\Laravel\Extension\LaravelExtension: ~
 ```
 
-You can take a look at [`example.phpspec.yml`](https://github.com/BenConstable/phpspec-laravel/blob/master/example.phpspec.yml)
+You can take a look at [`example.phpspec.yml`](https://github.com/heybigname/phpspec-laravel/blob/master/example.phpspec.yml)
 for a good set of sensible phpspec defaults for a Laravel project.
 
 ## Why this extension?
@@ -216,11 +214,11 @@ and covers the basics of writing tests (and it's free!).
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/BenConstable/phpspec-laravel/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/heybigname/phpspec-laravel/blob/master/CONTRIBUTING.md).
 
 ## License
 
-MIT &copy; Ben Constable. See [LICENSE](https://github.com/BenConstable/phpspec-laravel/blob/master/LICENSE) for more info.
+MIT &copy; Ben Constable. See [LICENSE](https://github.com/heybigname/phpspec-laravel/blob/master/LICENSE) for more info.
 
 ## Thanks
 
@@ -228,5 +226,5 @@ Thanks to...
 
 * [@obrignoni](https://github.com/obrignoni) for their great work in getting this extension working with Laravel 5
 * [@Sam-Burns](https://github.com/Sam-Burns) for their great work in getting this extension working with Phpspec v3
-* All of the [other contributors](https://github.com/BenConstable/phpspec-laravel/graphs/contributors) and to everyone that's
+* All of the [other contributors](https://github.com/heybigname/phpspec-laravel/graphs/contributors) and to everyone that's
 reported issues and bugs with the project
