@@ -1,6 +1,6 @@
 # phpspec Laravel Extension
 
-This extension is from Ben Constable but I forked it because he wouldn't update it.
+This extension is from Ben Constable but I forked it because it was no longer maintained.
 
 > [phpspec](http://www.phpspec.net/) extension for testing [Laravel](http://laravel.com/)
   applications.
