@@ -2,8 +2,11 @@ language: php
 
 php:
   - 7.1
-  - 7.2
   - 7.3
+
+env:
+  - PHPSPEC_VERSION=~4.3.0 LARAVEL_VERSION=~5
+  - PHPSPEC_VERSION=~5.1.0 LARAVEL_VERSION=5.7.*
 
 cache:
   directories:
@@ -11,7 +14,7 @@ cache:
 
 before_install:
   - phpenv config-rm xdebug.ini
-  - travis_retry composer require --no-update "phpspec/phpspec:~5.1.0"
+  - travis_retry composer require --no-update "phpspec/phpspec:${PHPSPEC_VERSION}"
   - travis_retry composer require --no-update "laravel/framework:${LARAVEL_VERSION}"
 
 install:
