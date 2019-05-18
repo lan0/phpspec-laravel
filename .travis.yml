@@ -8,6 +8,14 @@ env:
   - PHPSPEC_VERSION=~4.3.0 LARAVEL_VERSION=~5
   - PHPSPEC_VERSION=~5.1.0 LARAVEL_VERSION=5.7.*
 
+
+matrix:
+  exclude:
+    - php: 7.1
+      env: PHPSPEC_VERSION=~5.1.0 LARAVEL_VERSION=5.7.*
+    - php: 7.3
+      env: PHPSPEC_VERSION=~4.3.0 LARAVEL_VERSION=~5
+
 cache:
   directories:
     - $HOME/.composer/cache
