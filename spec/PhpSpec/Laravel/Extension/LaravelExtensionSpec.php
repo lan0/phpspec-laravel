@@ -10,7 +10,7 @@ class LaravelExtensionSpec extends ObjectBehavior
 {
     function let(ServiceContainer $container)
     {
-        $container->define(Argument::cetera())->willReturn();
+        $container->define(Argument::cetera());
     }
 
     function it_is_a_phpspec_extension()
@@ -54,7 +54,7 @@ class LaravelExtensionSpec extends ObjectBehavior
         $this->load($container, []);
     }
 
-    public function getMatchers()
+    public function getMatchers() : array
     {
         return [
             'endWith' => function($subject, $value) {
