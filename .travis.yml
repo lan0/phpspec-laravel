@@ -12,7 +12,7 @@ cache:
 before_install:
   - phpenv config-rm xdebug.ini
   - travis_retry composer require --no-update "phpspec/phpspec:~5.1.0"
-  - travis_retry composer require --no-update "laravel/framework:5.7.*"
+  - travis_retry composer require --no-update "laravel/framework:${LARAVEL_VERSION}"
 
 install:
   - composer update
